@@ -34,13 +34,7 @@ services:
       - ./enterprise:/mnt/enterprise
 
       - ./etc:/etc/odoo
-    networks:
-  static-network:
-    ipam:
-      config:
-        - subnet: 172.20.0.0/16
-          #docker-compose v3+ do not use ip_range
-          ip_range: 172.28.5.0/24
+
           
     restart: always             # run as a service
     
