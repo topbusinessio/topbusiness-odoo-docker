@@ -7,7 +7,7 @@ Installing Odoo 17 with one command.
 Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/topbusinessio/docker-odoo17/master/run.sh | sudo bash -s odoo-one 10017 20017
+curl -s https://raw.githubusercontent.com/topbusinessio/odoo17-docker/master/run.sh | sudo bash -s odoo-one 10017 20017
 ```
 
 to set up first Odoo instance @ `localhost:10017` (default master password: `topbusiness@1234`)
@@ -15,7 +15,7 @@ to set up first Odoo instance @ `localhost:10017` (default master password: `top
 and
 
 ``` bash
-curl -s https://raw.githubusercontent.com/topbusinessio/docker-odoo17/master/run.sh | sudo bash -s odoo-two 11017 21017
+curl -s https://raw.githubusercontent.com/topbusinessio/odoo17-docker/master/run.sh | sudo bash -s odoo-two 11017 21017
 ```
 
 to set up another Odoo instance @ `localhost:11017` (default master password: `topbusiness@1234`)
@@ -56,7 +56,7 @@ docker-compose up -d
 **If you get the permission issue**, change the folder permission to make sure that the container is able to access the directory:
 
 ``` sh
-$ git clone https://github.com/topbusinessio/docker-odoo17.git
+$ git clone https://github.com/topbusinessio/odoo17-docker.git
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 $ mkdir -p postgresql
