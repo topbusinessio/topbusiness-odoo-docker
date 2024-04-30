@@ -1,6 +1,6 @@
 # Quick install
 
-Installing Odoo 16 with one command.
+Installing Odoo 17 with one command.
 
 (Supports multiple Odoo instances on one server)
 
@@ -120,12 +120,12 @@ server {
 # docker-compose.yml
 
 * odoo:17.0
-* postgres:17
+* postgres:16
 
 # Odoo 17 screenshots
 
-<img src="screenshots/2022-10-17_22h16_21.png" width="50%">
+<img src="2022-10-17_22h16_21.png" width="100%">
 
-<img src="screenshots/2022-10-17_22h16_30.png" width="100%">
+<img src="2022-10-17_22h16_30.png" width="100%">
 
 <
