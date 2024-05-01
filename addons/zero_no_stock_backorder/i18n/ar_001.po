@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* zero_no_stock_backorder
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20230519\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-15 12:39+0000\n"
+"PO-Revision-Date: 2023-09-15 12:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: zero_no_stock_backorder
+#: model:res.groups,name:zero_no_stock_backorder.zero_no_stock_backorder_delivery
+msgid "Allow Create Stock Delivery BackOrder"
+msgstr "السماح بإنشاء طلب تعويضي لتسليم المخزون"
+
+#. module: zero_no_stock_backorder
+#: model:res.groups,name:zero_no_stock_backorder.zero_no_stock_backorder_internal
+msgid "Allow Create Stock Internal BackOrder"
+msgstr "السماح بإنشاء طلب تعويضي لتحويلات المخزون"
+
+#. module: zero_no_stock_backorder
+#: model:res.groups,name:zero_no_stock_backorder.zero_no_stock_backorder_receipt
+msgid "Allow Create Stock Receipt BackOrder"
+msgstr "السماح بإنشاء طلب تعويضي لاستلام المخزون"
+
+#. module: zero_no_stock_backorder
+#: model:res.groups,name:zero_no_stock_backorder.zero_no_stock_backorder_total
+msgid "Show Picking Total Qty"
+msgstr "عرض اجمالي الكميات للشحنات المخزنية"
+
+#. module: zero_no_stock_backorder
+#: model:ir.module.category,name:zero_no_stock_backorder.zero_no_stock_backorder
+msgid "Stock BackOrder Control"
+msgstr ""
+
+#. module: zero_no_stock_backorder
+#: model:ir.model.fields,field_description:zero_no_stock_backorder.field_stock_picking__product_uom_qty
+msgid "Total Qty Demand"
+msgstr "اجمالي الكمية المطلوبة"
+
+#. module: zero_no_stock_backorder
+#: code:addons/zero_no_stock_backorder/models/stock.py:0
+#: code:addons/zero_no_stock_backorder/models/stock.py:0
+#: code:addons/zero_no_stock_backorder/models/stock.py:0
+#, python-format
+msgid "Total Qty Demand Not Equal Total Quantity Done"
+msgstr "إجمالي الكمية المطلوبة غير متساوٍ مع إجمالي الكمية المنجزة"
+
+#. module: zero_no_stock_backorder
+#: model:ir.model.fields,field_description:zero_no_stock_backorder.field_stock_picking__quantity
+msgid "Total Quantity Done"
+msgstr "اجمالي الكمية المنفذه"
+
+#. module: zero_no_stock_backorder
+#: model:ir.model,name:zero_no_stock_backorder.model_stock_picking
+msgid "Transfer"
+msgstr "نقل "

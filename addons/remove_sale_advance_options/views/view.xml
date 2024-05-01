@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+         <record id="company_remove_sale_advance_options" model="ir.ui.view">
+            <field name="name">company.advance.payment.remove</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//field[@name='partner_id']" position="before">
+                        <field name="remove_sale_advance" string="Remove Sales Order Advance Payments" />
+                    </xpath>
+            </field>
+        </record>
+        <record id="remove_sale_order_advance" model="ir.ui.view">
+            <field name="name">sale.order.advance.payment.remove</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="payment_term_id" position="before">
+                    <field name="remove_sale_advance" invisible="1"/>
+                </field>
+                  <xpath expr="//button[@id='create_invoice_percentage']" position="attributes">
+                    <attribute name="invisible">remove_sale_advance == True or ( invoice_status == "no" or state == "sale" )</attribute>
+                  </xpath>
+             </field>
+        </record>
+         <record model="ir.ui.view" id="remove_sale_advance_options_sale">
+            <field name="name">sale.advance.payment.remove.show</field>
+            <field name="model">sale.advance.payment.inv</field>
+            <field name="inherit_id" ref="sale.view_sale_advance_payment_inv"/>
+            <field name="arch" type="xml">
+                <field name="sale_order_ids" position="after">
+                    <field name="remove_sale_advance" invisible="1"/>
+                </field>
+                <xpath expr="//field[@name='advance_payment_method']" position="attributes">
+                    <attribute name="invisible">remove_sale_advance == True or count &gt; 1 </attribute>
+                </xpath>
+            </field>
+        </record>
+
+</odoo>

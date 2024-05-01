@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+    
+    <record model="ir.module.category" id="module_create_account_move_restrict">
+        <field name="name">Create Account Move Restric</field>
+        <field name="sequence">22</field>
+    </record>
+    
+    <record id="create_invoice_restrict" model="res.groups">
+        <field name="name">Allow Create Manuel Invoice</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="category_id" ref="module_create_account_move_restrict"/>
+    </record>
+
+  
+    <record id="create_bill_restrict" model="res.groups">
+        <field name="name">Allow Create Manuel Bill</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="category_id" ref="module_create_account_move_restrict"/>
+    </record>
+
+    <record id="create_entry_restrict" model="res.groups">
+        <field name="name">Allow Create Manuel Entry</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="category_id" ref="module_create_account_move_restrict"/>
+    </record>
+
+
+
+    </data>
+  </odoo>

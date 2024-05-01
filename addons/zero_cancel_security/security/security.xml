@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<data>
+    <record model="ir.module.category" id="allow_cancel_documents">
+        <field name="name">Cancel Documents Control</field>
+        <field name="sequence">18</field>
+    </record>
+   
+    <record id="allow_cancel_po" model="res.groups">
+        <field name="name">Allow Cancel PO</field>
+        <field name="category_id" ref="allow_cancel_documents"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <record id="allow_cancel_so" model="res.groups">
+        <field name="name">Allow Cancel SO</field>
+        <field name="category_id" ref="allow_cancel_documents"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <record id="allow_cancel_picking" model="res.groups">
+        <field name="name">Allow Cancel Stock Picking</field>
+        <field name="category_id" ref="allow_cancel_documents"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+    <record id="allow_cancel_account_move" model="res.groups">
+        <field name="name">Allow Cancel Accounts</field>
+        <field name="category_id" ref="allow_cancel_documents"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <record id="allow_cancel_payments" model="res.groups">
+        <field name="name">Allow Cancel Payments</field>
+        <field name="category_id" ref="allow_cancel_documents"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    </data>
+
+</odoo>

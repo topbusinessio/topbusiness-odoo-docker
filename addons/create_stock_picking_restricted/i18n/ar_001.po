@@ -1,0 +1,62 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* create_stock_picking_restricted
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20230826\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-09 15:11+0000\n"
+"PO-Revision-Date: 2023-09-09 15:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: create_stock_picking_restricted
+#: model:res.groups,name:create_stock_picking_restricted.create_deliver_picking_restrict
+msgid "Allow Create Manual Stock Delivery Transfers"
+msgstr "يمكن عمل صرف مخزني يدوي"
+
+#. module: create_stock_picking_restricted
+#: model:res.groups,name:create_stock_picking_restricted.create_internal_picking_restrict
+msgid "Allow Create Manual Stock Internal Transfers"
+msgstr "يمكن عمل تحويلات مخزنية يدوية"
+
+#. module: create_stock_picking_restricted
+#: model:res.groups,name:create_stock_picking_restricted.create_receipt_picking_restrict
+msgid "Allow Create Manual Stock Receipt Transfers"
+msgstr "يمكن عمل استلامات مخزنية يدوية"
+
+#. module: create_stock_picking_restricted
+#: model:ir.module.category,name:create_stock_picking_restricted.create_stock_picking_restricted
+msgid "Create Stock Picking Restric"
+msgstr "صلاحيات انشاء حركة مخزنية يدوي"
+
+#. module: create_stock_picking_restricted
+#. odoo-python
+#: code:addons/create_stock_picking_restricted/models/module.py:0
+#, python-format
+msgid "Not Allowed To Create Manual Stock Delivery Transfers!"
+msgstr "لا يمكن عمل صرف مخزني يدوي"
+
+#. module: create_stock_picking_restricted
+#. odoo-python
+#: code:addons/create_stock_picking_restricted/models/module.py:0
+#, python-format
+msgid "Not Allowed To Create Manual Stock Internal Transfers!"
+msgstr "لا يمكن عمل تحويل مخزني يدوي"
+
+#. module: create_stock_picking_restricted
+#. odoo-python
+#: code:addons/create_stock_picking_restricted/models/module.py:0
+#, python-format
+msgid "Not Allowed To Create Manual Stock Receipt Transfers!"
+msgstr "لا يمكن عمل استلامات مخزنية يدوي"
+
+#. module: create_stock_picking_restricted
+#: model:ir.model,name:create_stock_picking_restricted.model_stock_picking
+msgid "Transfer"
+msgstr "الشحنة"

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+    
+    <record model="ir.module.category" id="create_stock_picking_restricted">
+        <field name="name">Create Stock Picking Restric</field>
+        <field name="sequence">23</field>
+    </record>
+    
+    <record id="create_internal_picking_restrict" model="res.groups">
+        <field name="name">Allow Create Manual Stock Internal Transfers</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="category_id" ref="create_stock_picking_restricted"/>
+    </record>
+    <record id="create_receipt_picking_restrict" model="res.groups">
+        <field name="name">Allow Create Manual Stock Receipt Transfers</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="category_id" ref="create_stock_picking_restricted"/>
+    </record>
+    <record id="create_deliver_picking_restrict" model="res.groups">
+        <field name="name">Allow Create Manual Stock Delivery Transfers</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="category_id" ref="create_stock_picking_restricted"/>
+    </record>
+
+
+    </data>
+  </odoo>
