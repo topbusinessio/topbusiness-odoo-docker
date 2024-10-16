@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="allow_cancel_sale_order" model="ir.ui.view">
+    <field name="model">sale.order</field>
+    <field name="name">sale.order.allow.cancel</field>
+    <field name="type">form</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+          <xpath expr="//button[@name='action_cancel']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_so</attribute>
+          </xpath>
+          <xpath expr="//button[@name='action_draft']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_so</attribute>
+          </xpath>
+    </field>
+  </record>
+
+  <record id="allow_cancel_purchase_order" model="ir.ui.view">
+    <field name="model">purchase.order</field>
+    <field name="name">purchase.order.allow.cancel</field>
+    <field name="type">form</field>
+    <field name="inherit_id" ref="purchase.purchase_order_form"/>
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+          <xpath expr="//button[@name='button_draft']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_po</attribute>
+          </xpath>
+          <xpath expr="//button[@name='button_cancel']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_po</attribute>
+          </xpath>
+    </field>
+  </record>
+  <record id="account_move_form_allow_cancel" model="ir.ui.view">
+    <field name="model">account.move</field>
+    <field name="name">account.move.allow.cancel</field>
+    <field name="type">form</field>
+    <field name="inherit_id" ref="account.view_move_form"/>
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+          <xpath expr="//form[1]/header[1]/button[@name='button_cancel'][2]" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_account_move</attribute>
+          </xpath>
+          <xpath expr="//button[@name='button_draft']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_account_move</attribute>
+          </xpath>
+          <xpath expr="//form[1]/header[1]/button[@name='button_cancel']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_account_move</attribute>
+          </xpath>
+    </field>
+  </record>
+
+
+  <record id="allow_cancel_account_payment_form" model="ir.ui.view">
+      <field name="name">account.payment.allow.cancel</field>
+      <field name="model">account.payment</field>
+      <field name="inherit_id" ref="account.view_account_payment_form"/>
+      <field name="arch" type="xml"> 
+          <xpath expr="//button[@name='action_draft']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_account_move</attribute>
+          </xpath>
+          <xpath expr="//button[@name='action_cancel']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_account_move</attribute>
+          </xpath>
+      </field>
+  </record>
+  <record id="allow_cancel_stock_picking_form" model="ir.ui.view">
+      <field name="name">stock.picking.allow.cancel</field>
+      <field name="model">stock.picking</field>
+      <field name="inherit_id" ref="stock.view_picking_form"/>
+      <field name="arch" type="xml"> 
+          <xpath expr="//button[@name='action_cancel']" position="attributes">
+            <attribute name="groups">zero_cancel_security.allow_cancel_po,zero_cancel_security.allow_cancel_so,zero_cancel_security.allow_cancel_picking</attribute>
+          </xpath>
+      </field>
+  </record>
+</odoo>

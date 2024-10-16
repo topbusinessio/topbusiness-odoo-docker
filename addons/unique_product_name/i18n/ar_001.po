@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* unique_product_name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20230519\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-30 12:29+0000\n"
+"PO-Revision-Date: 2023-07-30 12:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: unique_product_name
+#: model:res.groups,name:unique_product_name.group_bill_uniqe_product
+msgid "Allow Repeat Bill Products"
+msgstr "السماح بتكرار الصنف في فاتورة المشتريات"
+
+#. module: unique_product_name
+#: model:res.groups,name:unique_product_name.group_invoice_uniqe_product
+msgid "Allow Repeat Invoice Products"
+msgstr "السماح بتكرار الصنف في فاتورة المبيعات"
+
+#. module: unique_product_name
+#: model:res.groups,name:unique_product_name.group_purchase_uniqe_product
+msgid "Allow Repeat Purchase Order Products"
+msgstr "السماح بتكرار الصنف في  امر الشراء"
+
+#. module: unique_product_name
+#: model:res.groups,name:unique_product_name.group_sales_uniqe_product
+msgid "Allow Repeat sales Order Products"
+msgstr "السماح بتكرار الصنف في امر البيع"
+
+#. module: unique_product_name
+#: model:ir.model.fields,field_description:unique_product_name.field_account_bank_statement_line__bill_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_account_move__bill_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_account_payment__bill_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_res_company__bill_unique_product
+msgid "Bill Unique Product"
+msgstr "عدم تكرار الصنف في فاتورة الشراء"
+
+#. module: unique_product_name
+#: model:ir.model,name:unique_product_name.model_res_company
+msgid "Companies"
+msgstr "الشركات "
+
+#. module: unique_product_name
+#: model:ir.model.fields,field_description:unique_product_name.field_account_bank_statement_line__invoice_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_account_move__invoice_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_account_payment__invoice_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_res_company__invoice_unique_product
+msgid "Invoice Unique Product"
+msgstr "عدم تكرار الصنف في فاتورة المبيعات"
+
+#. module: unique_product_name
+#: model:ir.model,name:unique_product_name.model_purchase_order
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: unique_product_name
+#: model:ir.model,name:unique_product_name.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "بند أمر الشراء"
+
+#. module: unique_product_name
+#: model:ir.model.fields,field_description:unique_product_name.field_purchase_order__purchase_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_res_company__purchase_unique_product
+msgid "Purchase Unique Product"
+msgstr "عدم تكرار الصنف في امر الشراء"
+
+#. module: unique_product_name
+#: model:ir.model.fields,field_description:unique_product_name.field_res_company__sale_unique_product
+#: model:ir.model.fields,field_description:unique_product_name.field_sale_order__sale_unique_product
+msgid "Sale Unique Product"
+msgstr "عدم تكرار الصنف في امر البيع"
+
+#. module: unique_product_name
+#: model:ir.model,name:unique_product_name.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: unique_product_name
+#: model:ir.model,name:unique_product_name.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند أمر المبيعات"
+
+#. module: unique_product_name
+#: model_terms:ir.ui.view,arch_db:unique_product_name.view_company_form_uniqe_product
+msgid "Unique Product Options"
+msgstr "اعداد تكرار اسم الصنف"
+
+#. module: unique_product_name
+#: model:ir.model,name:unique_product_name.model_account_move
+msgid "bills auto date"
+msgstr "قيد اليومية"
+
+#. module: unique_product_name
+#. odoo-python
+#: code:addons/unique_product_name/models/module.py:0
+#: code:addons/unique_product_name/models/module.py:0
+#: code:addons/unique_product_name/models/module.py:0
+#: code:addons/unique_product_name/models/module.py:0
+#, python-format
+msgid "product number already exists!. (Product Name: %s)"
+msgstr "اسم الصنف موجود بالفعل!. (اسم الصنف: %s)"
