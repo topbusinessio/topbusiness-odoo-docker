@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-account_approve_route,account.approve.route,model_account_approve_route,,1,0,0,0
-account_approve_route_user,account.approve.route.user,model_account_approve_route,account.group_account_invoice,1,1,1,0
-account_approve_route_manager,account.approve.route.manager,model_account_approve_route,account.group_account_manager,1,1,1,1
-account_teams,account.teams,model_account_teams,,1,0,0,0
-account_teams_manager,account.teams.manager,model_account_teams,account.group_account_manager,1,1,1,1
-account_team_member,account.team.member,model_account_team_member,,1,0,0,0
-account_team_member_manager,account.team.member.manager,model_account_team_member,account.group_account_manager,1,1,1,1
